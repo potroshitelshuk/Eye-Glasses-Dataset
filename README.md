@@ -2,9 +2,9 @@
 
 **Algorithm:** (input image) --> (return 1 - photo satisfies properties; 0 - not satisfy)
 1. Using pre-trained model count faces on photo.
-	1.1 If no faces were found --> return 0
-	1.2 If more than one face was found --> return 0
-	1.3 If only one face was found --> step2
+	1. If no faces were found --> return 0
+	2. If more than one face was found --> return 0
+	3. If only one face was found --> step2
 2. Check size of face using returned boxes from model
 	2.1 Height and Width > 255 pixels --> step3
 	2.2 Otherwise --> return 0
