@@ -24,6 +24,7 @@
 
 **Results:**
 1. With the input as a folder with ~10k images I managed to collect ~1000 photo which we detected as fully meeting the requirements.
+2. [Dataset_Glasses](https://drive.google.com/drive/folders/1SfiOu5zaTEo-beGuaeUlUpHnepFoCfVB?usp=sharing)
 
 **TO DO:**
 1. Collect photo from instagram/other platforms
