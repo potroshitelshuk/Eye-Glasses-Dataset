@@ -1,18 +1,18 @@
 **Detect people with eye-glasses on photo**
 
 **Algorithm:** (input image) --> (return 1 - photo satisfies properties; 0 - not satisfy)
-	1. Using pre-trained model count faces on photo.
-		1.1 If no faces were found --> return 0
-		1.2 If more than one face was found --> return 0
-		1.3 If only one face was found --> step2
-	2. Check size of face using returned boxes from model
-		2.1 Height and Width > 255 pixels --> step3
-		2.2 Otherwise --> return 0
-	3#(deleted, need to improve) Crop face from image for the next step
-	3. Using pre-trained model to find eye-glasses on photo(worked only with folders not with single images)
-		3.1 If returned probability of glasses > threshold --> step4
-		3.2 Otherwise --> return 0
-	4. Move image to output folder
+1. Using pre-trained model count faces on photo.
+	1.1 If no faces were found --> return 0
+	1.2 If more than one face was found --> return 0
+	1.3 If only one face was found --> step2
+2. Check size of face using returned boxes from model
+	2.1 Height and Width > 255 pixels --> step3
+	2.2 Otherwise --> return 0
+3#(deleted, need to improve) Crop face from image for the next step
+3. Using pre-trained model to find eye-glasses on photo(worked only with folders not with single images)
+	3.1 If returned probability of glasses > threshold --> step4
+	3.2 Otherwise --> return 0
+4. Move image to output folder
 
 **Used models:**
 	1. Find glasses - [eyeglasses_classifier_lightweight](https://github.com/acheshkov/eyeglasses_classifier_lightweight)
